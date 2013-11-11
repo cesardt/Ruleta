@@ -1,5 +1,13 @@
 package exceptions.game.com;
 
-public class InvalidBetException {
+public class InvalidBetException extends Exception {
+	
+	public InvalidBetException(){
+		
+	}
+	
+	public String getMessage(){
+		
+	}
 
 }
