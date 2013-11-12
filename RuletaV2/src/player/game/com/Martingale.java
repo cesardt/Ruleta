@@ -1,16 +1,20 @@
 package player.game.com;
 
+import exceptions.game.com.InvalidBetException;
+import model.game.com.*;
+
 public class Martingale extends Player {
-	
-	public Martingale(Player player){
-		
+	private int lossCount=0;
+	public Martingale(Table table){
+		super(table);
 	}
 	
 	public void lose(Bet bet){
-		
+		super.lose(bet);
+		this.lossCount++;
 	}
 	
-	public void placeBets(){
+	public void placeBets() throws InvalidBetException{
 		
 	}
 	
@@ -19,11 +23,12 @@ public class Martingale extends Player {
 	}
 	
 	public void setLossCount(int lossCount){
-		
+		this.lossCount=lossCount;
 	}
 	
 	public void win(Bet bet){
-		
+		super.win(bet);
+		this.lossCount=0;
 	}
 
 }

@@ -1,14 +1,16 @@
 package player.game.com;
 
 import model.game.com.Bet;
+import model.game.com.Table;
 
 public abstract class Player {
 	
 	int stake;
 	int roundsToGo;
+	Table table;
 	
 	public Player(Table table){
-		
+		this.table=table;
 	}
 	
 	public int getStake(){
