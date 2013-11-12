@@ -10,12 +10,12 @@ public class Outcome implements Comparable {
 		this.odds = odds;
 	}
 	
-	public int compareTo(java.lang.Object o){
+	/*public int compareTo(java.lang.Object o){
 		
-	}
+	}*/
 	
 	public boolean equals(java.lang.Object obj){
-		
+		return this.name == ((Outcome)o).name;
 	}
 	
 	public java.lang.String getName(){
