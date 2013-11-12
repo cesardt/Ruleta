@@ -39,7 +39,7 @@ public class Outcome implements Comparable {
 	}
 	
 	public java.lang.String toString(){
-		return "Name: "+name+" ;odds: "+odds;
+        return name+" ("+odds+":1)";
 	}
 	
 	public int winAmount(int amount){
