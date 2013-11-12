@@ -32,7 +32,7 @@ public class Bet {
 	}
 	
 	public int winAmount(){
-		return this.outcome.winAmount(this.amount) - this.amount;
+		return this.outcome.winAmount(this.amount);
 	}
 
 }
