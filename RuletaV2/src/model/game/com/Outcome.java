@@ -27,7 +27,7 @@ public class Outcome implements Comparable {
 	}
 	
 	public int hashCode(){
-		
+		return 0;
 	}
 	
 	public void setName(java.lang.String name){

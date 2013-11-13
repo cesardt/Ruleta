@@ -15,9 +15,11 @@ public class Bet {
 		return this.amount;
 	}
 	
+	/*
 	public java.lang.String getAmountBetFormatted(int amountToBeFormatted){
 		
 	}
+	*/
 	
 	public Outcome getOutcome(){
 		return this.outcome;	

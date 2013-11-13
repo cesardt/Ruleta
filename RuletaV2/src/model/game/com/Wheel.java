@@ -21,11 +21,11 @@ public class Wheel {
 	public Bin getBin(int bin){
 		return this.bins.get(bin);
 	}
-	
+	/*
 	public Outcome getOutcome(String name){
 		
 	}
-	
+	*/
 	public java.util.Random getRng(){
 		return rng;
 	}

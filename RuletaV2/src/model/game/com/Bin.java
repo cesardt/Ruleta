@@ -1,15 +1,17 @@
 package model.game.com;
 
+import java.util.Vector;
+
 public class Bin {
 	
-	java.util.Collection<Outcome> outcomes;
+	java.util.Vector<Outcome> outcomes;
 	
 	public Bin(){
-		this.outcomes.clear();
+		outcomes = new java.util.Vector<Outcome>();
 	}
 	
 	public Bin(java.util.Collection<Outcome> outcomes){
-		this.outcomes = outcomes;
+		this.outcomes = (Vector<Outcome>) outcomes;
 	}
 	
 	public Bin(Outcome[] outcomes){

@@ -7,7 +7,7 @@ public class InvalidBetException extends Exception {
 	}
 	
 	public String getMessage(){
-		
+		return "Invalid bet placed";
 	}
 
 }
